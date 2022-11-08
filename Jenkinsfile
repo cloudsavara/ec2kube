@@ -22,8 +22,7 @@ pipeline{
                 environment name:'SKIP',value:'N'
             }
             steps{
-                sh'''
-                aws s3 mb s3://tfstateec2kube'''
+                sh'''aws s3 mb s3://tfstateec2kube'''
                 
             }
         }
