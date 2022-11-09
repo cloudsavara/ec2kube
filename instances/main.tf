@@ -38,8 +38,8 @@ data "aws_security_group" "kube_sg_id" {
 }
 
 resource "aws_key_pair" "kube_cp_key" {
-  key_name   = "etkube-cp-instance-key"
-  public_key = "<ssh_key>"
+  key_name   = "vara"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCRWPQNuFR+e807W6aaZQZjpbWye3X/udhU1HN9Zdqfr3RJw6UARvu5Z77yxM0KNiAUPVzAPgygB2njtq27rs9QsovPzPvDqoqB3kEIsZYOIh7znHNSy4HaNE8Uftp6kDeBXvOR+kggD3TCpZpZVGl+BRmTr2O8Hv16VIrWTFdyvxw+HF61Ou3v9aOXStDOacHUOIteubND/MQjAfFcFozbnjptZgTCKg1haD5p2Yn2dxbAIwS6vp+d2gXSZ5KTZyEYFzF72VPmDSOEQgSHBrK/Pb/Rii1EjxQdoAOc1W4NNjP9uNlJMUB3VjydUamXdnzSfVlTavxHJeSyDJIRKPdN vara"
 }
 
 
