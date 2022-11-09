@@ -1,3 +1,3 @@
 variable "ansible_bucket"{
-    default="<bucket_name>"
+    default="tfstateec2kube"
 }
