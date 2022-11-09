@@ -1,7 +1,8 @@
 - hosts: localhost
   gather_facts: yes
   become: true
-  ansible_python_interpreter=/usr/bin/python
+  vars:
+    ansible_python_interpreter: '/bin/python3'
   connection: local
   tasks:
     - name: get ec2
