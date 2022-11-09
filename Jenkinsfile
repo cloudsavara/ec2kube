@@ -118,7 +118,7 @@ pipeline{
                                         cd ansible_infra
                                         cd ansible_playbooks
                                         env
-                                        ansible-playbook identify_controlplane.yml  -i inv
+                                        ansible-playbook identify_controlplane.yml --user jenkins
                                         cat inv
                                         """
                                         }
