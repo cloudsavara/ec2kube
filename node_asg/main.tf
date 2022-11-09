@@ -6,8 +6,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "<state_bucket>"
-    key    = "<state_key>"
+    bucket = "tfstateec2kube"
+    key    = "asg/terraform.tfstate"
     region = "us-east-1"
   }
 }
