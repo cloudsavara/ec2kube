@@ -37,6 +37,12 @@ pipeline{
                             steps{
                                 sh '''
                                 cd ansible_infra
+                                echo 'Installing Terraform'
+                                sh "wget https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip"
+                                sh "unzip terraform_${TF_VERSION}_linux_amd64.zip"
+                                sh 'sudo mv terraform /usr/bin'
+			                    sh "rm -rf terraform_${TF_VERSION}_linux_amd64.zip"
+			                    sh 'terraform version'
                                 terraform init
                                 terraform validate'''
                             }
